@@ -1,10 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Product } from '../../model/products';
+import { Product } from '../model/products';
 
 @Injectable()
 export class CartService {
   items: Product[] = [];
-/* . . . */
 
   addToCart(product: Product) {
     this.items.push(product);
@@ -18,5 +17,4 @@ export class CartService {
     this.items = [];
     return this.items;
   }
-/* . . . */
 }
