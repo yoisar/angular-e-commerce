@@ -9,7 +9,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductsModule } from './products/products.module';
 import { ProductListComponent } from './products/components/product-list/product-list.component';
 import { ProductDetailsComponent } from './products/components/product-details/product-details.component';
-import { CartComponent } from './products/components/cart/cart.component';
+// import { CartComponent } from './products/components/cart/cart.component';
 
 @NgModule({
   imports: [
@@ -18,7 +18,8 @@ import { CartComponent } from './products/components/cart/cart.component';
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
+      // ,
+      // { path: 'cart', component: CartComponent },
     ]),
     ProductsModule,
   ],
